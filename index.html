@@ -6,8 +6,20 @@
     <title>Nicolas von Lützow</title>
 
     <meta name="author" content="Nicolas von Lützow">
+    <meta name="description" content="Nicolas von Lützow — PhD candidate at TUM, researching 3D generation, scene reconstruction, and novel view synthesis.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Nicolas von Lützow">
+    <meta property="og:description" content="PhD candidate at TUM, researching 3D generation, scene reconstruction, and novel view synthesis.">
+    <meta property="og:image" content="https://nicolasvonluetzow.github.io/images/me.jpg">
+    <meta property="og:url" content="https://nicolasvonluetzow.github.io/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Nicolas von Lützow">
+    <meta name="twitter:description" content="PhD candidate at TUM, researching 3D generation, scene reconstruction, and novel view synthesis.">
+    <meta name="twitter:image" content="https://nicolasvonluetzow.github.io/images/me.jpg">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
   </head>
@@ -25,6 +37,7 @@
                 <p>
     I'm a PhD candidate in the <a href="https://www.niessnerlab.org/">TUM Visual Computing and AI Lab</a> under the supervision of Prof. Matthias Nießner.
     Before starting my PhD I studied Informatics (M.Sc.) at <a href="https://www.tum.de/en/">TUM</a> and Computer Science (B.Sc.) at <a href="https://www.tuhh.de/tuhh/en/startpage">TUHH</a>.
+    My research interests lie in 3D generation, scene reconstruction, and novel view synthesis.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:nicolas.von-luetzow@tum.de">Email</a> &nbsp;/&nbsp;
@@ -42,19 +55,59 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  I'm mainly interested in scene reconstruction, novel view synthesis, and 3D generation.</p>
+                <h2>Publications</h2>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-    <tr onmouseout="linprim_stop()" onmouseover="linprim_start()"  bgcolor="#ffffd0">
+    <tr onmouseout="gaussiangpt_stop()" onmouseover="gaussiangpt_start()"  bgcolor="#ffffd0">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='linprim_image'><video  width=100% height=100% muted autoplay loop>
+          <div class="two" id='gaussiangpt_image'><video  width=100% height=100% muted autoplay loop playsinline>
+          <source src="images/gaussiangpt_animation.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+
+          </video></div>
+          <img src='images/gaussiangpt_image.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function gaussiangpt_start() {
+            document.getElementById('gaussiangpt_image').style.opacity = "1";
+          }
+
+          function gaussiangpt_stop() {
+            document.getElementById('gaussiangpt_image').style.opacity = "0";
+          }
+          gaussiangpt_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://nicolasvonluetzow.github.io/GaussianGPT/">
+          <span class="papertitle">GaussianGPT: Towards Autoregressive 3D Gaussian Scene Generation</span>
+        </a>
+        <br>
+        <strong>Nicolas von Lützow</strong>,
+        <a href="https://barbararoessle.github.io/">Barbara Rössle</a>,
+        <a href="https://www.niessnerlab.org/members/katharina_schmid/profile.html">Katharina Schmid</a>,
+        <a href="https://www.niessnerlab.org/">Matthias Nießner</a>
+        <br>
+        <em>arXiv</em>, 2026
+        <br>
+        <a href="https://nicolasvonluetzow.github.io/GaussianGPT/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2603.26661">arXiv</a>
+        <p></p>
+        <p>We introduce GaussianGPT, a transformer-based model that directly generates 3D Gaussians via next-token prediction, enabling full 3D scene generation, completion, and outpainting through autoregressive sampling.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="linprim_stop()" onmouseover="linprim_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='linprim_image'><video  width=100% height=100% muted autoplay loop playsinline>
           <source src="images/linprim_animation.mp4" type="video/mp4">
           Your browser does not support the video tag.
 
