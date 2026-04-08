@@ -48,7 +48,17 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/me.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/me.jpg" class="hoverZoomLink"></a>
+                <!-- Crop controls:
+                     scale(...)         — zoom factor (1.0 = no zoom, 1.3 = 30% zoom in)
+                     transform-origin   — focal point (X% Y%); lower Y% moves focus up -->
+                <div style="overflow:hidden;border-radius:50%;width:100%;max-width:100%;">
+                  <a href="images/image_website.jpeg">
+                    <img style="width:100%;display:block;object-fit:cover;
+                                transform:scale(1.2);
+                                transform-origin:50% 50%;"
+                         alt="profile photo" src="images/image_website.jpeg" class="hoverZoomLink">
+                  </a>
+                </div>
               </td>
             </tr>
           </tbody></table>
