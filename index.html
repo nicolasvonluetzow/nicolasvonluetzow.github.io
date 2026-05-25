@@ -72,6 +72,49 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+    <tr onmouseout="genrecon_stop()" onmouseover="genrecon_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='genrecon_image'><video  width=100% height=100% muted autoplay loop playsinline>
+          <source src="images/genrecon_animation.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+
+          </video></div>
+          <img src='images/genrecon_image.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function genrecon_start() {
+            document.getElementById('genrecon_image').style.opacity = "1";
+          }
+
+          function genrecon_stop() {
+            document.getElementById('genrecon_image').style.opacity = "0";
+          }
+          genrecon_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://kasothaphie.github.io/GenRecon/">
+          <span class="papertitle">GenRecon: Bridging Generative Priors for Multi-View 3D Scene Reconstruction</span>
+        </a>
+        <br>
+        <a href="https://kasothaphie.github.io/">Katharina Schmid</a>,
+        <strong>Nicolas von Lützow</strong>,
+        <a href="https://scholar.google.com/citations?user=CDy95WwAAAAJ&hl=en">Jozef Hladk&yacute;</a>,
+        <a href="https://www.3dunderstanding.org/team.html">Angela Dai</a>,
+        <a href="https://www.niessnerlab.org/">Matthias Nießner</a>
+        <br>
+        <em>arXiv</em>, 2026
+        <br>
+        <a href="https://kasothaphie.github.io/GenRecon/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2605.23888">arXiv</a>
+        <p></p>
+        <p>We reconstruct high-fidelity 3D scene meshes from multi-view RGB images by integrating generative 3D priors. Our method processes overlapping scene chunks with a unified 3D conditioning mechanism to produce complete, editable PBR reconstructions.
+        </p>
+      </td>
+    </tr>
+
     <tr onmouseout="gaussiangpt_stop()" onmouseover="gaussiangpt_start()"  bgcolor="#ffffd0">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
@@ -100,7 +143,7 @@
         <br>
         <strong>Nicolas von Lützow</strong>,
         <a href="https://barbararoessle.github.io/">Barbara Rössle</a>,
-        <a href="https://www.niessnerlab.org/members/katharina_schmid/profile.html">Katharina Schmid</a>,
+        <a href="https://kasothaphie.github.io/">Katharina Schmid</a>,
         <a href="https://www.niessnerlab.org/">Matthias Nießner</a>
         <br>
         <em>arXiv</em>, 2026
